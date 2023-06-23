@@ -6,12 +6,12 @@ pipeline{
         tools{maven 'maven' }
       stages{
          stage('code compilation'){
-           Steps{
+           steps{
                 sh 'mvn clean compile'
                  }
             }
             stage('code packaging'){
-                       Steps{
+                       steps{
                             sh 'mvn clean package'
                              }
                         }
